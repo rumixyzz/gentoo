@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/rumi/.config/x11'
+let g:netrw_dirhist_3='/home/rumi/wmi'
+let g:netrw_dirhist_2='/home/rumi/.local/src/website'
+let g:netrw_dirhist_1='/home/rumi'

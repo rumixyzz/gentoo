@@ -1,0 +1,9 @@
+#!/bin/sh
+mpv /dev/video0 \
+--profile=low-latency \
+--untimed \
+--no-cache \
+--cache=no \
+--demuxer-lavf-o=fflags=nobuffer \
+--vd-lavc-threads=1 \
+--video-sync=display-desync

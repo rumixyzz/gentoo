@@ -1,0 +1,18 @@
+execute pathogen#infect()
+filet plugin indent on
+
+se nu rnu
+se cb=unnamedplus
+se fcs=eob:\ 
+se udf
+se udir=~/.config/vim/undo
+
+if !isdirectory(expand("~/.config/vim/undo"))
+	cal mkdir(expand("~/.config/vim/undo"))
+en
+
+
+let g:airline_theme = "solarized_flood"
+
+
+syn off
