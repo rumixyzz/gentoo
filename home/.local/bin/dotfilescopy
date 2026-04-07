@@ -2,6 +2,7 @@
 pretty=1 # whether to log commands being executed or not.
 dotfiles=".zshenv .local/bin .config/vim .config/fontconfig .config/x11 .config/zsh .config/user-dirs.dirs"
 repo="$HOME/.local/src/rice"
+dest="$repo/home"
 
 [ "$pretty" -lt 1 ] && {
 	set -x
@@ -9,5 +10,5 @@ repo="$HOME/.local/src/rice"
 
 command -v rsync || exit 1
 for d in $dotfiles; do
-	rsync -avR --delete --force "$HOME/./$d" "$repo"
+	rsync -avR --delete --force "$HOME/./$d" "$dest"
 done

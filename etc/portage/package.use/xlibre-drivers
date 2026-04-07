@@ -1,0 +1,1 @@
+x11-base/xlibre-drivers -intel -fbdev libinput -vesa -video_cards_vesa

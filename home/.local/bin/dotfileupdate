@@ -1,0 +1,4 @@
+#!/bin/bash
+sh ~/.local/bin/dotfilescopy
+sh ~/.local/bin/portagecopy
+qlist -I > $HOME/.local/src/rice/pkgs

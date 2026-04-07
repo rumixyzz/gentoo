@@ -1,0 +1,11 @@
+#!/bin/bash
+pretty=1 # whether to log commands being executed or not.
+repo="$HOME/.local/src/rice"
+dest="$repo/etc"
+
+[ "$pretty" -lt 1 ] && {
+	set -x
+};
+
+command -v rsync || exit 1
+rsync -av --delete --force "/etc/portage" "$dest"
