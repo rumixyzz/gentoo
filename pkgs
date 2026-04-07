@@ -156,6 +156,7 @@ dev-build/ninja
 dev-cpp/eigen
 dev-cpp/fast_float
 dev-cpp/highway
+dev-cpp/nlohmann_json
 dev-db/sqlite
 dev-lang/duktape
 dev-lang/go
@@ -238,8 +239,10 @@ dev-libs/plasma-wayland-protocols
 dev-libs/popt
 dev-libs/rapidjson
 dev-libs/serd
+dev-libs/simde
 dev-libs/snowball-stemmer
 dev-libs/sord
+dev-libs/uthash
 dev-libs/vala-common
 dev-libs/wayland
 dev-libs/wayland-protocols
@@ -492,6 +495,7 @@ media-libs/opus
 media-libs/portaudio
 media-libs/portmidi
 media-libs/portsmf
+media-libs/rnnoise
 media-libs/sbc
 media-libs/sdl2-image
 media-libs/shaderc
@@ -533,6 +537,7 @@ net-libs/libsoup
 net-libs/libssh2
 net-libs/libtirpc
 net-libs/llhttp
+net-libs/mbedtls
 net-libs/nghttp2
 net-libs/nghttp3
 net-mail/mailbase
@@ -625,6 +630,7 @@ sys-fs/fuse-common
 sys-fs/lvm2
 sys-fs/udev-init-scripts
 sys-kernel/dracut
+sys-kernel/gentoo-kernel-bin
 sys-kernel/gentoo-kernel-bin
 sys-kernel/installkernel
 sys-kernel/linux-firmware
