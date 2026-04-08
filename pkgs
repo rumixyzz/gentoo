@@ -657,6 +657,7 @@ sys-libs/zlib
 sys-power/power-profiles-daemon
 sys-power/upower
 sys-process/btop
+sys-process/htop
 sys-process/procps
 sys-process/psmisc
 virtual/acl
