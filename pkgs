@@ -361,6 +361,7 @@ dev-python/trove-classifiers
 dev-python/urllib3
 dev-python/webencodings
 dev-python/wheel
+dev-qt/qt5compat
 dev-qt/qtbase
 dev-qt/qtdeclarative
 dev-qt/qtshadertools
@@ -483,6 +484,7 @@ media-libs/libsamplerate
 media-libs/libsdl2
 media-libs/libsndfile
 media-libs/libsoundtouch
+media-libs/libv4l
 media-libs/libva
 media-libs/libva-intel-media-driver
 media-libs/libvorbis
@@ -500,6 +502,7 @@ media-libs/sbc
 media-libs/sdl2-image
 media-libs/shaderc
 media-libs/soxr
+media-libs/speexdsp
 media-libs/sratom
 media-libs/suil
 media-libs/tiff
@@ -513,6 +516,7 @@ media-sound/pamixer
 media-video/ffmpeg
 media-video/libva-utils
 media-video/mpv
+media-video/obs-studio
 media-video/pipewire
 media-video/wireplumber
 net-dialup/ppp
