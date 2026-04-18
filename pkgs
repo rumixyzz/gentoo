@@ -389,6 +389,7 @@ dev-util/spirv-headers
 dev-util/spirv-llvm-translator
 dev-util/spirv-tools
 dev-util/vulkan-headers
+dev-util/vulkan-tools
 dev-util/wayland-scanner
 dev-util/xxd
 dev-util/xxdiff
@@ -723,6 +724,7 @@ www-client/librewolf-bin
 www-client/w3m
 x11-apps/appres
 x11-apps/iceauth
+x11-apps/mesa-progs
 x11-apps/mkfontscale
 x11-apps/xauth
 x11-apps/xhost
