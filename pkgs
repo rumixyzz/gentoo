@@ -25,6 +25,7 @@ acct-group/sgx
 acct-group/shadow
 acct-group/sshd
 acct-group/tape
+acct-group/transmission
 acct-group/tty
 acct-group/usb
 acct-group/video
@@ -37,6 +38,7 @@ acct-user/polkitd
 acct-user/portage
 acct-user/postmaster
 acct-user/sshd
+acct-user/transmission
 app-accessibility/at-spi2-core
 app-admin/doas
 app-admin/eselect
@@ -558,6 +560,7 @@ net-misc/openssh
 net-misc/rsync
 net-misc/socat
 net-misc/wget
+net-p2p/transmission
 net-print/cups
 net-wireless/bluez
 net-wireless/iw
