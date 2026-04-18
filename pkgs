@@ -61,6 +61,7 @@ app-arch/bzip2
 app-arch/cpio
 app-arch/gzip
 app-arch/libarchive
+app-arch/libdeflate
 app-arch/lz4
 app-arch/ncompress
 app-arch/tar
@@ -125,7 +126,9 @@ app-text/docbook-xml-dtd
 app-text/docbook-xml-dtd
 app-text/docbook-xsl-ns-stylesheets
 app-text/docbook-xsl-stylesheets
+app-text/doxygen
 app-text/enchant
+app-text/ghostscript-gpl
 app-text/gspell
 app-text/hunspell
 app-text/iso-codes
@@ -155,10 +158,14 @@ dev-build/make
 dev-build/meson
 dev-build/meson-format-array
 dev-build/ninja
+dev-cpp/cairomm
 dev-cpp/eigen
 dev-cpp/fast_float
+dev-cpp/glibmm
+dev-cpp/gtkmm
 dev-cpp/highway
 dev-cpp/nlohmann_json
+dev-cpp/pangomm
 dev-db/sqlite
 dev-lang/duktape
 dev-lang/go
@@ -204,6 +211,7 @@ dev-libs/libev
 dev-libs/libevdev
 dev-libs/libevent
 dev-libs/libffi
+dev-libs/libfmt
 dev-libs/libgcrypt
 dev-libs/libgit2
 dev-libs/libgpg-error
@@ -218,6 +226,7 @@ dev-libs/libpcre
 dev-libs/libpcre2
 dev-libs/libpipeline
 dev-libs/libsass
+dev-libs/libsigc++
 dev-libs/libsodium
 dev-libs/libtasn1
 dev-libs/libunistring
@@ -244,6 +253,7 @@ dev-libs/serd
 dev-libs/simde
 dev-libs/snowball-stemmer
 dev-libs/sord
+dev-libs/spdlog
 dev-libs/uthash
 dev-libs/vala-common
 dev-libs/wayland
@@ -463,6 +473,7 @@ media-libs/glu
 media-libs/gmmlib
 media-libs/graphene
 media-libs/harfbuzz
+media-libs/jbig2dec
 media-libs/lcms
 media-libs/libaom
 media-libs/libass
@@ -496,6 +507,7 @@ media-libs/lilv
 media-libs/lv2
 media-libs/mesa
 media-libs/openal
+media-libs/openjpeg
 media-libs/opus
 media-libs/portaudio
 media-libs/portmidi
@@ -525,6 +537,7 @@ media-video/wireplumber
 net-dialup/ppp
 net-dialup/ppp-scripts
 net-dns/c-ares
+net-dns/libidn
 net-dns/libidn2
 net-firewall/iptables
 net-libs/glib-networking
@@ -533,6 +546,7 @@ net-libs/libasyncns
 net-libs/libmbim
 net-libs/libmicrohttpd
 net-libs/libmnl
+net-libs/libnatpmp
 net-libs/libndp
 net-libs/libnma
 net-libs/libnsl
@@ -545,6 +559,7 @@ net-libs/libssh2
 net-libs/libtirpc
 net-libs/llhttp
 net-libs/mbedtls
+net-libs/miniupnpc
 net-libs/nghttp2
 net-libs/nghttp3
 net-mail/mailbase
@@ -805,6 +820,7 @@ x11-misc/dmenu
 x11-misc/dunst
 x11-misc/i3status
 x11-misc/notification-daemon
+x11-misc/sct
 x11-misc/shared-mime-info
 x11-misc/slop
 x11-misc/sux
