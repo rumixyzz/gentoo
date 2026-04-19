@@ -185,6 +185,7 @@ dev-lang/yasm
 dev-libs/appstream
 dev-libs/appstream-glib
 dev-libs/boehm-gc
+dev-libs/boost
 dev-libs/confuse
 dev-libs/cxxopts
 dev-libs/double-conversion
@@ -466,6 +467,7 @@ media-libs/flac
 media-libs/fontconfig
 media-libs/freeglut
 media-libs/freetype
+media-libs/gavl
 media-libs/giflib
 media-libs/glew
 media-libs/glm
@@ -480,6 +482,7 @@ media-libs/libass
 media-libs/libavif
 media-libs/libcanberra
 media-libs/libdisplay-info
+media-libs/libdmtx
 media-libs/libdvdcss
 media-libs/libdvdnav
 media-libs/libdvdread
@@ -503,6 +506,7 @@ media-libs/libva
 media-libs/libva-intel-media-driver
 media-libs/libvorbis
 media-libs/libwebp
+media-libs/libzen
 media-libs/lilv
 media-libs/lv2
 media-libs/mesa
@@ -583,6 +587,7 @@ net-wireless/wireless-regdb
 net-wireless/wireless-tools
 net-wireless/wpa_supplicant
 perl-core/File-Temp
+sci-libs/fftw
 sec-keys/openpgp-keys-gentoo-release
 sys-apps/acl
 sys-apps/attr
@@ -594,6 +599,7 @@ sys-apps/diffutils
 sys-apps/etckeeper
 sys-apps/file
 sys-apps/findutils
+sys-apps/flatpak
 sys-apps/gawk
 sys-apps/gentoo-functions
 sys-apps/grep
@@ -693,6 +699,7 @@ virtual/libintl
 virtual/libudev
 virtual/libusb
 virtual/man
+virtual/minizip
 virtual/notification-daemon
 virtual/opengl
 virtual/openssh
