@@ -1,4 +1,6 @@
 #!/bin/bash
 sh ~/.local/bin/dotfilescopy
 sh ~/.local/bin/portagecopy
+
+doas cp /usr/share/pipewire/pipewire.conf /home/rumi/.local/src/rice/usr/share/pipewire/pipewire.conf
 qlist -I > $HOME/.local/src/rice/pkgs
