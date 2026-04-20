@@ -6,6 +6,7 @@ se cb=unnamedplus
 se fcs=eob:\ 
 se udf
 se udir=~/.config/vim/undo
+se nohls
 
 if !isdirectory(expand("~/.config/vim/undo"))
 	cal mkdir(expand("~/.config/vim/undo"))
