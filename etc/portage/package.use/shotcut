@@ -1,0 +1,4 @@
+# required by media-video/shotcut-25.08.16::gentoo
+# required by shotcut (argument)
+>=media-libs/mlt-7.34.1-r1 jack
+
