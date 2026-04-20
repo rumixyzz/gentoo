@@ -160,6 +160,7 @@ dev-cpp/eigen
 dev-cpp/glibmm
 dev-cpp/gtkmm
 dev-cpp/highway
+dev-cpp/nlohmann_json
 dev-cpp/pangomm
 dev-db/sqlite
 dev-lang/duktape
@@ -242,9 +243,11 @@ dev-libs/plasma-wayland-protocols
 dev-libs/popt
 dev-libs/rapidjson
 dev-libs/serd
+dev-libs/simde
 dev-libs/snowball-stemmer
 dev-libs/sord
 dev-libs/spdlog
+dev-libs/uthash
 dev-libs/vala-common
 dev-libs/wayland
 dev-libs/wayland-protocols
@@ -363,6 +366,7 @@ dev-python/trove-classifiers
 dev-python/urllib3
 dev-python/webencodings
 dev-python/wheel
+dev-qt/qt5compat
 dev-qt/qtbase
 dev-qt/qtdeclarative
 dev-qt/qtshadertools
@@ -492,9 +496,11 @@ media-libs/opus
 media-libs/portaudio
 media-libs/portmidi
 media-libs/portsmf
+media-libs/rnnoise
 media-libs/sdl2-image
 media-libs/shaderc
 media-libs/soxr
+media-libs/speexdsp
 media-libs/sratom
 media-libs/suil
 media-libs/tiff
@@ -534,6 +540,7 @@ net-libs/libsoup
 net-libs/libssh2
 net-libs/libtirpc
 net-libs/llhttp
+net-libs/mbedtls
 net-libs/miniupnpc
 net-libs/nghttp2
 net-libs/nghttp3
@@ -797,6 +804,7 @@ x11-misc/shared-mime-info
 x11-misc/slop
 x11-misc/sux
 x11-misc/xbitmaps
+x11-misc/xcompmgr
 x11-misc/xdg-user-dirs
 x11-misc/xdg-user-dirs-gtk
 x11-misc/xdg-utils

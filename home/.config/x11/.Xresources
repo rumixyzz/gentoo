@@ -1,44 +1,43 @@
 !
-! Generated with :
-! XRDB2Xreources.py
+! Builtin Tango Dark
 !
-*.foreground:  #d6dbe5
-*.background:  #131313
-*.cursorColor: #b9b9b9
+*.foreground:  #cccccc
+*.background:  #000000
+*.cursorColor: #cccccc
 !
 ! Black
-*.color0:      #1f1f1f
-*.color8:      #d6dbe5
+*.color0:      #000000
+*.color8:      #555753
 !
 ! Red
-*.color1:      #f81118
-*.color9:      #de352e
+*.color1:      #cc0000
+*.color9:      #ef2929
 !
 ! Green
-*.color2:      #2dc55e
-*.color10:     #1dd361
+*.color2:      #4e9a06
+*.color10:     #8ae234
 !
 ! Yellow
-*.color3:      #ecba0f
-*.color11:     #f3bd09
+*.color3:      #c4a000
+*.color11:     #fce94f
 !
 ! Blue
-*.color4:      #2a84d2
-*.color12:     #1081d6
+*.color4:      #3465a4
+*.color12:     #729fcf
 !
 ! Magenta
-*.color5:      #4e5ab7
-*.color13:     #5350b9
+*.color5:      #75507b
+*.color13:     #ad7fa8
 !
 ! Cyan
-*.color6:      #1081d6
-*.color14:     #0f7ddb
+*.color6:      #06989a
+*.color14:     #34e2e2
 !
 ! White
-*.color7:      #d6dbe5
-*.color15:     #ffffff
+*.color7:      #d3d7cf
+*.color15:     #eeeeec
 !
 ! Bold, Italic, Underline
-*.colorBD:     #d6dbe5
+*.colorBD:     #ffffff
 !*.colorIT:
 !*.colorUL:
