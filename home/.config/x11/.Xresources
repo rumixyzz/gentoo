@@ -1,43 +1,55 @@
-!
-! Builtin Tango Dark
-!
-*.foreground:  #cccccc
-*.background:  #000000
-*.cursorColor: #cccccc
-!
-! Black
-*.color0:      #000000
-*.color8:      #555753
-!
-! Red
-*.color1:      #cc0000
-*.color9:      #ef2929
-!
-! Green
-*.color2:      #4e9a06
-*.color10:     #8ae234
-!
-! Yellow
-*.color3:      #c4a000
-*.color11:     #fce94f
-!
-! Blue
-*.color4:      #3465a4
-*.color12:     #729fcf
-!
-! Magenta
-*.color5:      #75507b
-*.color13:     #ad7fa8
-!
-! Cyan
-*.color6:      #06989a
-*.color14:     #34e2e2
-!
-! White
-*.color7:      #d3d7cf
-*.color15:     #eeeeec
-!
-! Bold, Italic, Underline
-*.colorBD:     #ffffff
-!*.colorIT:
-!*.colorUL:
+! base16 Brewer
+! Scheme author: Timothée Poisot (http://github.com/tpoisot)
+! Template author: Tinted Theming (https://github.com/tinted-theming)
+
+#define base00 #0c0d0e
+#define base01 #2e2f30
+#define base02 #515253
+#define base03 #737475
+#define base04 #959697
+#define base05 #b7b8b9
+#define base06 #dadbdc
+#define base07 #fcfdfe
+#define base08 #e31a1c
+#define base09 #e6550d
+#define base0A #dca060
+#define base0B #31a354
+#define base0C #80b1d3
+#define base0D #3182bd
+#define base0E #756bb1
+#define base0F #b15928
+
+*foreground:   base05
+#ifdef background_opacity
+*background:   [background_opacity]base00
+#else
+*background:   base00
+#endif
+*cursorColor:  base05
+
+*color0:       base00
+*color1:       base08
+*color2:       base0B
+*color3:       base0A
+*color4:       base0D
+*color5:       base0E
+*color6:       base0C
+*color7:       base05
+
+*color8:       base03
+*color9:       base08
+*color10:      base0B
+*color11:      base0A
+*color12:      base0D
+*color13:      base0E
+*color14:      base0C
+*color15:      base07
+
+! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+! use 'shell' template to set these if necessary
+*color16:      base09
+*color17:      base0F
+*color18:      base01
+*color19:      base02
+*color20:      base04
+*color21:      base06

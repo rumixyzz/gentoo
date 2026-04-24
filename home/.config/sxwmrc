@@ -1,10 +1,10 @@
 # Colour Themes:
-focused_border_colour    : #75507b
-unfocused_border_colour  : #444444
+focused_border_colour: #75857B
+unfocused_border_colour: #0F1610
 swap_border_colour       : #eeeeee
 
 # General Options:
-gaps                    : 0 
+gaps                    : 12
 border_width            : 2
 master_width            : 60 # Percentage of screen width
 resize_master_amount    : 1
@@ -30,7 +30,13 @@ mod_key : super
 # Application Launchers:
 bind : mod + Return : "st"
 bind : mod + b : "librewolf-bin"
-bind : mod + p : "dmenu_run -b -fn 'monospace-18' -nb '#000000' -nf '#cccccc' -sf '#000000' -sb '#75507b'"
+bind : mod + p : "dmenu_run -b -fn 'monospace-14' -nb '#0F1610' -nf '#c3c4c3' -sf '#0F1610' -sb '#75857B' "
+
+bind : mod + w : "walls"
+
+
+bind : XF86AudioRaiseVolume : "pamixer -i 1"
+bind : XF86AudioLowerVolume : "pamixer -d 1"
 
 # Window Management:
 call : mod + q : close_window
@@ -84,6 +90,7 @@ call : mod + shift + f : fullscreen
 
 # Reload Config
 call : mod + r : reload_config
+bind : mod + shift + r : "sxbar"
 
 # Scratchpads
 scratchpad : mod + alt + 1 : create 1
