@@ -1,0 +1,7 @@
+# required by gnome-extra/nemo-6.4.5::gentoo
+# required by nemo (argument)
+>=dev-libs/libxmlb-0.3.21 introspection
+# required by gnome-extra/nemo-6.4.5::gentoo
+# required by nemo (argument)
+>=x11-libs/xapp-2.8.13 introspection
+
