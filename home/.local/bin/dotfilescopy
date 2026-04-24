@@ -1,6 +1,6 @@
 #!/bin/bash
 pretty=1 # whether to log commands being executed or not.
-dotfiles=".zshenv .local/bin .config/vim .config/fontconfig .config/x11 .config/zsh .config/user-dirs.dirs .config/sxwmrc .config/sxbarc"
+dotfiles=".zshenv .local/bin .config/vim .config/fontconfig .config/x11 .config/zsh .config/user-dirs.dirs .config/sxwmrc .config/sxbarc .config/nvim"
 repo="$HOME/.local/src/rice"
 dest="$repo/home"
 

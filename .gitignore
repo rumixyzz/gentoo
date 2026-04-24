@@ -1,3 +1,4 @@
 home/.config/vim/autoload
 home/.config/vim/bundle
 home/.config/vim/undo
+home/.config/nvim/lazy-lock.json
