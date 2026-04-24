@@ -19,6 +19,7 @@ acct-group/pipewire
 acct-group/plugdev
 acct-group/polkitd
 acct-group/portage
+acct-group/realtime
 acct-group/render
 acct-group/root
 acct-group/sgx
@@ -67,6 +68,7 @@ app-arch/tar
 app-arch/unzip
 app-arch/xz-utils
 app-arch/zstd
+app-crypt/argon2
 app-crypt/gcr
 app-crypt/gcr
 app-crypt/gnupg
@@ -102,6 +104,7 @@ app-misc/editor-wrapper
 app-misc/mime-types
 app-misc/neofetch
 app-misc/pax-utils
+app-misc/tmux
 app-portage/cfg-update
 app-portage/eix
 app-portage/elt-patches
@@ -199,8 +202,10 @@ dev-libs/kdsingleapplication
 dev-libs/libassuan
 dev-libs/libatomic_ops
 dev-libs/libbsd
+dev-libs/libbytesize
 dev-libs/libcdio
 dev-libs/libcdio-paranoia
+dev-libs/libdbusmenu
 dev-libs/libev
 dev-libs/libevdev
 dev-libs/libevent
@@ -247,6 +252,7 @@ dev-libs/simde
 dev-libs/snowball-stemmer
 dev-libs/sord
 dev-libs/spdlog
+dev-libs/tree-sitter
 dev-libs/uthash
 dev-libs/vala-common
 dev-libs/wayland
@@ -315,9 +321,11 @@ dev-perl/WWW-RobotRules
 dev-perl/XML-Parser
 dev-perl/XS-Parse-Keyword
 dev-perl/YAML-Tiny
+dev-python/babel
 dev-python/certifi
 dev-python/charset-normalizer
 dev-python/cython
+dev-python/dbus-python
 dev-python/docutils
 dev-python/editables
 dev-python/ensurepip-pip
@@ -393,6 +401,7 @@ dev-util/re2c
 dev-util/spirv-headers
 dev-util/spirv-llvm-translator
 dev-util/spirv-tools
+dev-util/tree-sitter-cli
 dev-util/vulkan-headers
 dev-util/vulkan-tools
 dev-util/wayland-scanner
@@ -403,7 +412,13 @@ games-fps/assaultcube
 gnome-base/dconf
 gnome-base/gnome-keyring
 gnome-base/gsettings-desktop-schemas
+gnome-base/gvfs
+gnome-base/libgnomekbd
 gnome-base/librsvg
+gnome-extra/cinnamon-desktop
+gnome-extra/cinnamon-translations
+gnome-extra/libgsf
+gnome-extra/nemo
 gnome-extra/nm-applet
 gnome-extra/polkit-gnome
 gui-apps/grim
@@ -433,9 +448,13 @@ llvm-runtimes/openmp
 mail-client/aerc
 media-fonts/encodings
 media-fonts/font-util
+media-fonts/fontawesome
 media-fonts/hack
+media-fonts/ibm-plex
 media-fonts/inconsolata
 media-fonts/liberation-fonts
+media-fonts/monaspace
+media-fonts/nerdfonts
 media-fonts/noto
 media-fonts/noto-emoji
 media-fonts/unifont
@@ -444,6 +463,7 @@ media-gfx/flameshot
 media-gfx/graphite2
 media-gfx/imagemagick
 media-gfx/maim
+media-gfx/nsxiv
 media-gfx/potrace
 media-libs/alsa-lib
 media-libs/alsa-topology-conf
@@ -460,6 +480,7 @@ media-libs/glu
 media-libs/gmmlib
 media-libs/graphene
 media-libs/harfbuzz
+media-libs/imlib2
 media-libs/jbig2dec
 media-libs/lcms
 media-libs/libaom
@@ -473,6 +494,7 @@ media-libs/libdvdread
 media-libs/libepoxy
 media-libs/libexif
 media-libs/libglvnd
+media-libs/libid3tag
 media-libs/libjpeg-turbo
 media-libs/libjxl
 media-libs/libogg
@@ -483,6 +505,7 @@ media-libs/libsamplerate
 media-libs/libsdl2
 media-libs/libsndfile
 media-libs/libsoundtouch
+media-libs/libv4l
 media-libs/libva
 media-libs/libva-intel-media-driver
 media-libs/libvorbis
@@ -498,6 +521,7 @@ media-libs/portmidi
 media-libs/portsmf
 media-libs/rnnoise
 media-libs/sdl2-image
+media-libs/sdl2-mixer
 media-libs/shaderc
 media-libs/soxr
 media-libs/speexdsp
@@ -514,6 +538,7 @@ media-sound/pamixer
 media-video/ffmpeg
 media-video/libva-utils
 media-video/mpv
+media-video/obs-studio
 media-video/pipewire
 media-video/wireplumber
 net-dialup/ppp
@@ -522,6 +547,7 @@ net-dns/c-ares
 net-dns/libidn
 net-dns/libidn2
 net-firewall/iptables
+net-libs/enet
 net-libs/glib-networking
 net-libs/gnutls
 net-libs/libasyncns
@@ -565,6 +591,7 @@ net-wireless/wireless-regdb
 net-wireless/wpa_supplicant
 perl-core/File-Temp
 sec-keys/openpgp-keys-gentoo-release
+sys-apps/accountsservice
 sys-apps/acl
 sys-apps/attr
 sys-apps/baselayout
@@ -578,6 +605,7 @@ sys-apps/findutils
 sys-apps/flatpak
 sys-apps/gawk
 sys-apps/gentoo-functions
+sys-apps/gptfdisk
 sys-apps/grep
 sys-apps/groff
 sys-apps/help2man
@@ -586,6 +614,7 @@ sys-apps/install-xattr
 sys-apps/iproute2
 sys-apps/iucode_tool
 sys-apps/kbd
+sys-apps/keyutils
 sys-apps/kmod
 sys-apps/less
 sys-apps/locale-gen
@@ -610,6 +639,7 @@ sys-auth/elogind
 sys-auth/pambase
 sys-auth/passwdqc
 sys-auth/polkit
+sys-block/parted
 sys-boot/efibootmgr
 sys-boot/gnu-efi
 sys-boot/grub
@@ -627,11 +657,13 @@ sys-devel/m4
 sys-devel/patch
 sys-firmware/intel-microcode
 sys-firmware/sof-firmware
+sys-fs/cryptsetup
 sys-fs/e2fsprogs
 sys-fs/fuse
 sys-fs/fuse-common
 sys-fs/lvm2
 sys-fs/udev-init-scripts
+sys-fs/udisks
 sys-kernel/dracut
 sys-kernel/gentoo-kernel-bin
 sys-kernel/installkernel
@@ -642,7 +674,9 @@ sys-libs/efivar
 sys-libs/gdbm
 sys-libs/glibc
 sys-libs/gpm
+sys-libs/libblockdev
 sys-libs/libcap
+sys-libs/libnvme
 sys-libs/libseccomp
 sys-libs/libxcrypt
 sys-libs/mtdev
@@ -654,6 +688,7 @@ sys-libs/slang
 sys-libs/timezone-data
 sys-libs/zlib
 sys-power/power-profiles-daemon
+sys-power/switcheroo-control
 sys-power/upower
 sys-process/btop
 sys-process/htop
@@ -665,6 +700,7 @@ virtual/dist-kernel
 virtual/editor
 virtual/freedesktop-icon-theme
 virtual/glu
+virtual/imagemagick-tools
 virtual/libc
 virtual/libcrypt
 virtual/libelf
@@ -746,6 +782,7 @@ x11-drivers/xf86-video-vesa
 x11-libs/cairo
 x11-libs/gdk-pixbuf
 x11-libs/gtk+
+x11-libs/gtk+
 x11-libs/libdockapp
 x11-libs/libdrm
 x11-libs/libfontenc
@@ -770,6 +807,7 @@ x11-libs/libXi
 x11-libs/libXinerama
 x11-libs/libxkbcommon
 x11-libs/libxkbfile
+x11-libs/libxklavier
 x11-libs/libXmu
 x11-libs/libXpm
 x11-libs/libXpresent
@@ -786,6 +824,7 @@ x11-libs/pango
 x11-libs/pixman
 x11-libs/startup-notification
 x11-libs/wxGTK
+x11-libs/xapp
 x11-libs/xcb-util
 x11-libs/xcb-util-cursor
 x11-libs/xcb-util-errors
@@ -799,6 +838,8 @@ x11-misc/compose-tables
 x11-misc/dmenu
 x11-misc/dunst
 x11-misc/i3status
+x11-misc/pywal16
+x11-misc/screenkey
 x11-misc/sct
 x11-misc/shared-mime-info
 x11-misc/slop
@@ -808,6 +849,7 @@ x11-misc/xcompmgr
 x11-misc/xdg-user-dirs
 x11-misc/xdg-user-dirs-gtk
 x11-misc/xdg-utils
+x11-misc/xdotool
 x11-misc/xkeyboard-config
 x11-misc/xscreensaver
 x11-misc/xsel
@@ -820,8 +862,11 @@ x11-plugins/wmMatrix
 x11-plugins/wmmemload
 x11-plugins/wmpower
 x11-plugins/wmsystray
+x11-terms/alacritty
 x11-themes/adwaita-icon-theme
 x11-themes/adwaita-icon-theme-legacy
+x11-themes/gnome-themes-standard
+x11-themes/gtk-engines-adwaita
 x11-themes/hicolor-icon-theme
 x11-themes/sound-theme-freedesktop
 x11-wm/i3
