@@ -1,2 +1,2 @@
 #!/bin/sh
-find $HOME/pics/walls -type f | nsxiv -to - | xargs -I {} wal -s -o $HOME/.config/wal/postrun -i "{}"
+find $HOME/pics/walls -type f | nsxiv -to - | xargs -I {} xwallpaper --zoom "{}" 
