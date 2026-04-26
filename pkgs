@@ -453,6 +453,7 @@ media-fonts/hack
 media-fonts/ibm-plex
 media-fonts/inconsolata
 media-fonts/liberation-fonts
+media-fonts/libertine
 media-fonts/monaspace
 media-fonts/nerdfonts
 media-fonts/noto
@@ -537,6 +538,7 @@ media-sound/mpg123-base
 media-sound/pamixer
 media-video/ffmpeg
 media-video/libva-utils
+media-video/lossless-cut-bin
 media-video/mpv
 media-video/obs-studio
 media-video/pipewire
