@@ -2,9 +2,10 @@
 
 
 autoload -Uz colors && colors
-#export PROMPT="%B%F{red}[%f%F{yellow}%n%f%F{green}@%f%F{blue}%m%f %F{magenta}%~%f%F{red}]%f%F{cyan}$%f%b "
+export PROMPT="%B%F{red}[%f%F{yellow}%n%f%F{green}@%f%F{blue}%m%f %F{magenta}%~%f%F{red}]%f%F{cyan}$%f%b "
+#export PROMPT="%B%F{green}%n@%m%f %F{blue}%~$ %f%b"
 
-export PROMPT="%B%F{green}%n@%m%f %F{blue}%~$ %f%b"
+[[ -z "$TMUX" ]] && tmux new-session -A -s main
 
 
 alias ls='ls --color=auto'
