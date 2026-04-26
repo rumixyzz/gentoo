@@ -1,0 +1,22 @@
+#!/bin/sh
+vol="$(pamixer --get-volume)"
+
+case "$vol" in
+    muted)
+        icon="󰝟"
+        ;;
+    [7-9][0-9]|100)
+        icon="󰕾"  # high
+        ;;
+    [4-6][0-9])
+        icon="󰖀"  # medium
+        ;;
+    [0-3][0-9])
+        icon="󰕿"  # low
+        ;;
+    *)
+        icon="󰕿"
+        ;;
+esac
+
+printf "%s%%" "$icon $vol"

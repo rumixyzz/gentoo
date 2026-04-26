@@ -1,0 +1,19 @@
+#!/bin/sh
+BAT="BAT0"
+capacity="$(cat /sys/class/power_supply/"$BAT"/capacity)"
+
+case $capacity in
+    100) icon="󰁹" ;;
+    9[0-9]) icon="󰂂" ;;
+    8[0-9]) icon="󰂁" ;;
+    7[0-9]) icon="󰂀" ;;
+    6[0-9]) icon="󰁿" ;;
+    5[0-9]) icon="󰁾" ;;
+    4[0-9]) icon="󰁽" ;;
+    3[0-9]) icon="󰁼" ;;
+    2[0-9]) icon="󰁻" ;;
+    1[0-9]) icon="󰁺" ;;
+    [0-9])  icon="󰂎" ;;
+esac
+
+printf "%s%%" "$icon $capacity"
