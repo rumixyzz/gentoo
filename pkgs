@@ -19,7 +19,6 @@ acct-group/pipewire
 acct-group/plugdev
 acct-group/polkitd
 acct-group/portage
-acct-group/realtime
 acct-group/render
 acct-group/root
 acct-group/sgx
@@ -522,7 +521,6 @@ media-libs/portmidi
 media-libs/portsmf
 media-libs/rnnoise
 media-libs/sdl2-image
-media-libs/sdl2-mixer
 media-libs/shaderc
 media-libs/soxr
 media-libs/speexdsp
@@ -549,7 +547,6 @@ net-dns/c-ares
 net-dns/libidn
 net-dns/libidn2
 net-firewall/iptables
-net-libs/enet
 net-libs/glib-networking
 net-libs/gnutls
 net-libs/libasyncns
