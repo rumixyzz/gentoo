@@ -1,53 +1,39 @@
 # layout and style
 bottom_bar          : false
-height              : 19
+height              : 20
 vertical_padding    : 0
 horizontal_padding  : 0
 text_padding        : 0
 border              : false
 border_width        : 2
-background_colour   : #0F1610
-foreground_colour   : #c3c4c3
+background_colour   : #0c0d0e
+foreground_colour   : #b7b8b9
 border_colour       : #75857B
-font                : monospace
+font                : monospace 
 font_size           : 18
 
 # modules
-module.0.name       : clock
-module.0.cmd        : date '+%I:%M %p'
+
+module.0.name       : volume
+module.0.cmd        : sb-vol
 module.0.enabled    : true
 module.0.interval   : 1
 
-module.1.name       : date
-module.1.cmd        : date '+%Y-%m-%d'
+module.1.name       : battery
+module.1.cmd        : sb-bat
 module.1.enabled    : true
-module.1.interval   : 60
+module.1.interval   : 15
 
-module.2.name       : battery
-module.2.cmd        : cat /sys/class/power_supply/BAT0/capacity 2>/dev/null | sed 's/$/%/' || echo 'N/A'
+module.2.name       : date
+module.2.cmd        : sb-date
 module.2.enabled    : true
-module.2.interval   : 30
-
-module.3.name       : volume
-module.3.cmd        : amixer get Master | grep -o '[0-9]*%' | head -1 || echo 'N/A'
-module.3.enabled    : true
-module.3.interval   : 1
-
-module.4.name       : cpu
-module.4.cmd        : top -bn1 | grep 'Cpu(s)' | sed 's/.*, *\([0-9.]*\)%* id.*/\1/' | awk '{print 100-$1"%"}'
-module.4.enabled    : true
-module.4.interval   : 3
-
-module.5.name       : mem
-module.5.cmd        : free -h | awk '/^Mem/ { print $3 }' | sed s/i//g
-module.5.enabled    : true
-module.5.interval   : 3
+module.2.interval   : 1
 
 workspaces.labels              : web term build mus misc tmp obs
-workspaces.active_background   : #75857B
-workspaces.active_foreground   : #0F1610
-workspaces.inactive_background : #0F1610
-workspaces.inactive_foreground : #c3c4c3
+workspaces.active_background   : #0c0d0e
+workspaces.active_foreground   : #e31a1c
+workspaces.inactive_background : #0c0d0e
+workspaces.inactive_foreground : #b7b8b9
 workspaces.padding_left        : 10
 workspaces.padding_right       : 10
 workspaces.spacing             : 0
