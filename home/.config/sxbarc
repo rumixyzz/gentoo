@@ -6,9 +6,9 @@ horizontal_padding  : 0
 text_padding        : 0
 border              : false
 border_width        : 2
-background_colour   : #0c0d0e
-foreground_colour   : #b7b8b9
-border_colour       : #75857B
+background_colour   : #121212
+foreground_colour   : #ebebeb
+border_colour       : #77788c
 font                : monospace 
 font_size           : 18
 
@@ -30,10 +30,10 @@ module.2.enabled    : true
 module.2.interval   : 1
 
 workspaces.labels              : web term build mus misc tmp obs
-workspaces.active_background   : #0c0d0e
-workspaces.active_foreground   : #e31a1c
-workspaces.inactive_background : #0c0d0e
-workspaces.inactive_foreground : #b7b8b9
+workspaces.active_background   : #121212
+workspaces.active_foreground   : #de4a29
+workspaces.inactive_background : #121212
+workspaces.inactive_foreground : #ebebeb
 workspaces.padding_left        : 10
 workspaces.padding_right       : 10
 workspaces.spacing             : 0

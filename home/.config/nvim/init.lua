@@ -29,14 +29,37 @@ vim.api.nvim_create_autocmd('FileType', {
 })
 
 require("tinted-nvim").setup({
-	default_scheme = "base16-brewer",
-	highlights = {
-		overrides = function(palette)
-			return {
-				StatusLine = { bg = "NONE" }
-			}
-		end,
-	},
+  schemes = {
+    ["base16-heisenberg"] = {
+      variant = "dark",
+      base00 = "#121212",
+      base01 = "#150d1f",
+      base02 = "#1a1a1a",
+      base03 = "#77788c",
+      base04 = "#d9d9d9",
+      base05 = "#ebebeb",
+      base06 = "#e2e2e2",
+      base07 = "#ffffff",
+      base08 = "#de4a29",
+      base09 = "#df8d21",
+      base0A = "#df8d21",
+      base0B = "#1ec68e",
+      base0C = "#2cb9be",
+      base0D = "#39a6dd",
+      base0E = "#976fee",
+      base0F = "#de4a29",
+    },
+  },
+
+  default_scheme = "base16-heisenberg",
+  highlights = {
+    overrides = function(p)
+      return {
+        CursorLine = { bg = p.base01 },
+        Visual = { bg = p.base02 },
+        Comment = { fg = p.base03, italic = true },
+	LineNr = { fg = p.base03 },
+      }
+    end,
+  },
 })
-
-

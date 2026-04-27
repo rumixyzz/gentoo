@@ -1,10 +1,10 @@
 # Colour Themes:
-focused_border_colour: #e31a1c
+focused_border_colour: #de4a29
 unfocused_border_colour: #444444
 swap_border_colour       : #eeeeee
 
 # General Options:
-gaps                    : 4
+gaps                    : 8
 border_width            : 2
 master_width            : 60 # Percentage of screen width
 resize_master_amount    : 1
@@ -30,7 +30,7 @@ mod_key : super
 # Application Launchers:
 bind : mod + Return : "st"
 bind : mod + b : "librewolf-bin"
-bind : mod + p : "dmenu_run -b -fn 'monospace-14' -nb '#0c0d0e' -nf '#b7b8b9' -sf '#0c0d0e' -sb '#e31a1c' "
+bind : mod + p : "dmenu_run -b -fn 'monospace-14' -nb '#000000' -nf '#ebdbb2' -sf '#1d2021' -sb '#689d6a' "
 
 bind : mod + w : "walls"
 
