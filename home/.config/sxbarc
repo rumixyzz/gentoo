@@ -30,8 +30,8 @@ module.2.enabled    : true
 module.2.interval   : 1
 
 workspaces.labels              : web term build mus misc tmp obs
-workspaces.active_background   : #121212
-workspaces.active_foreground   : #de4a29
+workspaces.active_foreground   : #121212
+workspaces.active_background   : #1ec68e
 workspaces.inactive_background : #121212
 workspaces.inactive_foreground : #ebebeb
 workspaces.padding_left        : 10

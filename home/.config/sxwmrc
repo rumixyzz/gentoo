@@ -1,10 +1,10 @@
 # Colour Themes:
-focused_border_colour: #de4a29
+focused_border_colour: #1ec68e
 unfocused_border_colour: #444444
 swap_border_colour       : #eeeeee
 
 # General Options:
-gaps                    : 8
+gaps                    : 12
 border_width            : 2
 master_width            : 60 # Percentage of screen width
 resize_master_amount    : 1
@@ -13,13 +13,13 @@ move_window_amount      : 50
 resize_window_amount    : 50
 snap_distance           : 5
 motion_throttle         : 60 # Set to screen refresh rate for smoothest motions
-should_float            : "pcmanfm", "obs"
+should_float            : "pcmanfm"
 new_win_focus           : true
 warp_cursor             : true
 floating_on_top         : true
 new_win_master          : false
 can_swallow             : "st"
-can_be_swallowed        : "mpv", "sxiv"
+can_be_swallowed        : "mpv", "sxiv", "nsxiv"
 start_fullscreen        : "mpv", "vlc"
 
 # Keybinds:
@@ -30,7 +30,7 @@ mod_key : super
 # Application Launchers:
 bind : mod + Return : "st"
 bind : mod + b : "librewolf-bin"
-bind : mod + p : "dmenu_run -b -fn 'monospace-14' -nb '#000000' -nf '#ebdbb2' -sf '#1d2021' -sb '#689d6a' "
+bind : mod + p : "dmenu_run -b -fn 'monospace-14' -nb '#121212' -nf '#ebebeb' -sb '#1ec68e' -sf '#121212' "
 
 bind : mod + w : "walls"
 
