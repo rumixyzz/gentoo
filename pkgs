@@ -138,6 +138,8 @@ app-text/gspell
 app-text/hunspell
 app-text/iso-codes
 app-text/libpaper
+app-text/libwpd
+app-text/libwpg
 app-text/lowdown
 app-text/mandoc
 app-text/manpager
@@ -154,6 +156,7 @@ dev-build/autoconf-archive
 dev-build/autoconf-wrapper
 dev-build/automake
 dev-build/automake-wrapper
+dev-build/b2
 dev-build/bmake
 dev-build/cmake
 dev-build/gtk-doc-am
@@ -186,6 +189,7 @@ dev-lang/yasm
 dev-libs/appstream
 dev-libs/appstream-glib
 dev-libs/boehm-gc
+dev-libs/boost
 dev-libs/confuse
 dev-libs/cxxopts
 dev-libs/double-conversion
@@ -228,6 +232,7 @@ dev-libs/libnl
 dev-libs/libpcre
 dev-libs/libpcre2
 dev-libs/libpipeline
+dev-libs/librevenge
 dev-libs/libsigc++
 dev-libs/libsodium
 dev-libs/libtasn1
@@ -633,6 +638,9 @@ net-wireless/iw
 net-wireless/wireless-regdb
 net-wireless/wpa_supplicant
 perl-core/File-Temp
+sci-libs/gsl
+sci-libs/lapack
+sci-libs/openblas
 sec-keys/openpgp-keys-gentoo-release
 sys-apps/accountsservice
 sys-apps/acl
@@ -742,6 +750,7 @@ virtual/acl
 virtual/dev-manager
 virtual/dist-kernel
 virtual/editor
+virtual/fortran
 virtual/freedesktop-icon-theme
 virtual/glu
 virtual/imagemagick-tools
