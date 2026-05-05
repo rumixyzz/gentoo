@@ -6,4 +6,4 @@ xset r rate 150 70 &
 xwallpaper --zoom $HOME/pics/wallpaper.png
 
 sxbar &
-exec sxwm
+exec dbus-run-session sxwm
