@@ -29,7 +29,7 @@ module.2.cmd        : sb-date
 module.2.enabled    : true
 module.2.interval   : 1
 
-workspaces.labels              : web term build mus misc tmp obs
+workspaces.labels              : 1 2 3 4 5 6 7 
 workspaces.active_foreground   : #121212
 workspaces.active_background   : #1ec68e
 workspaces.inactive_background : #121212

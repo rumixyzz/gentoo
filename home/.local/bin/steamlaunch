@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export $(dbus-launch) &&
+	flatpak run \
+	com.valvesoftware.Steam

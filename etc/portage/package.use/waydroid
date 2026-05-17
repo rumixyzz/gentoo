@@ -1,0 +1,10 @@
+# required by app-containers/waydroid-1.6.2::guru[python_single_target_python3_13,clipboard]
+# required by app-containers/waydroid-x11-1.0.2::guru
+# required by waydroid-x11 (argument)
+>=dev-python/pyclip-0.7.0-r2 wayland
+# required by app-containers/lxc-6.0.5::gentoo[caps,tools]
+# required by app-containers/waydroid-1.6.2::guru
+# required by app-containers/waydroid-x11-1.0.2::guru
+# required by waydroid-x11 (argument)
+>=sys-libs/libcap-2.77 static-libs
+
